@@ -1,5 +1,7 @@
-package com.gunp.testEcom;
+package com.gunp.testEcom.service;
 
+import com.gunp.testEcom.model.Product;
+import com.gunp.testEcom.repo.ProductRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import java.util.List;
 import java.util.Optional;

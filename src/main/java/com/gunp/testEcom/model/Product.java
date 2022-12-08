@@ -1,4 +1,4 @@
-package com.gunp.testEcom;
+package com.gunp.testEcom.model;
 
 import javax.persistence.*;
 

@@ -1,7 +1,7 @@
-package com.gunp.testEcom;
+package com.gunp.testEcom.repo;
 
+import com.gunp.testEcom.model.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.repository.CrudRepository;
 
 public interface ProductRepo extends JpaRepository<Product,Integer> {
 

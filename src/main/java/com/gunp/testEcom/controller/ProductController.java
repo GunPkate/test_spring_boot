@@ -1,5 +1,8 @@
-package com.gunp.testEcom;
+package com.gunp.testEcom.controller;
 
+import com.gunp.testEcom.repo.ProductRepo;
+import com.gunp.testEcom.model.ProductResponse;
+import com.gunp.testEcom.model.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
