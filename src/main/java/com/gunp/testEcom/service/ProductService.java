@@ -10,7 +10,7 @@ public class ProductService {
 
     @Autowired
     private ProductRepo productRepo;
-    public void createCategory(Product product){
+    public void createProduct(Product product){
         productRepo.save(product);
     }
 
@@ -19,7 +19,7 @@ public class ProductService {
         return  list;
     }
 
-    public Optional<Product> getCategoryByID(Integer id){
+    public Optional<Product> getProductByID(Integer id){
         Optional<Product> product = this.productRepo.findById(id);
         return product;
     }
