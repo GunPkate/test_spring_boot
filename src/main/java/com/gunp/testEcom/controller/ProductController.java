@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Arrays;
 import java.util.List;
 
 @RestController
@@ -44,7 +45,8 @@ public class ProductController {
     @PutMapping("/{id}")
     public ResponseEntity<ProductResponse> updateProduct(@PathVariable("id") int id){
         try {
-            productRepo.findAllProduct();
+            List<Product> list = productRepo.findAllProduct();
+
             return ResponseEntity.ok().body(new ProductResponse("200","add product success"));
         }
         catch (Exception e){
@@ -52,8 +54,15 @@ public class ProductController {
         }
     }
 
-    @DeleteMapping("/{id}")
-    public ResponseEntity<ProductResponse> deleteProduct(){
-        return ResponseEntity.ok().body(new ProductResponse("200","success"));
-    }
+//    @DeleteMapping("/{id}")
+//    public ResponseEntity<ProductResponse> deleteProduct(@PathVariable("id") long id){
+//        productRepo.deleteById((int) id);
+//        return ResponseEntity.ok().body(new ProductResponse("200","deleted success"));
+//    }
+
+//    @DeleteMapping("/{id}")
+//    public ResponseEntity<ProductResponse> deleteProduct(@PathVariable("id") long id){
+//        productRepo.deleteProduct(id);
+//        return ResponseEntity.ok().body(new ProductResponse("200","deleted success"));
+//    }
 }
