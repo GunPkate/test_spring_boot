@@ -16,6 +16,9 @@ public class TestEcomApplication {
 //	public CommandLineRunner demo(ProductRepo productRepo){
 //		return (args ->{
 //			productRepo.save(new Product("Jackfruit","Fruit"));
+//			productRepo.save(new Product("Papaya","Fruit"));
+//			productRepo.save(new Product("Coconut","Fruit"));
+//			productRepo.save(new Product("Apple","Fruit"));
 //		} );
 //	}
 }

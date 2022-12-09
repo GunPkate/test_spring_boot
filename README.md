@@ -13,3 +13,15 @@ src
                     |___service (logics + Query method Interface)
 ```
 
+## Controller
+| Annotation      | Description |
+|-----------------|-------------|
+| @RESTController |             |
+| @MappRequest    |             |
+| @RESTController |             |
+| @RESTController |             |
+
+
+## Repository and native query 
+### !! query in JPA string query must use class name as table reference.
+
