@@ -50,7 +50,7 @@ public class ProductController {
         }
     }
 
-    @PutMapping("/{id}")
+    @PutMapping("/{id}") //Query method interface
 //    public ResponseEntity<Product> updateProduct(@PathVariable("id") int id,@PathVariable("name") String name){
 //            Product result = productRepo.updateProductByID(id,name);
 //            return ResponseEntity.ok().body(result);

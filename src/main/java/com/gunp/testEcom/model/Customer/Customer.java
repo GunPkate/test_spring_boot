@@ -10,7 +10,7 @@ import java.util.List;
 @Table(name = "customer")
 public class Customer {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int CustomerId;
     private String CustomerName;
     private String ContactNo;
@@ -34,6 +34,14 @@ public class Customer {
         Description = description;
         CustomerInvoices = customerInvoices;
         CustomerPayments = customerPayments;
+    }
+
+    public Customer(String customerName, String contactNo, String area, String address, String description) {
+        CustomerName = customerName;
+        ContactNo = contactNo;
+        Area = area;
+        Address = address;
+        Description = description;
     }
 
     public int getCustomerId() {

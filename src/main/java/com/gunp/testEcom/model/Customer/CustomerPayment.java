@@ -6,7 +6,7 @@ import javax.persistence.*;
 @Table(name ="customer_payment")
 public class CustomerPayment {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int CustomerPaymentId;
 //    private int CustomerId;
     private int CustomerInvoiceId;

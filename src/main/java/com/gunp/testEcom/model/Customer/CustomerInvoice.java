@@ -9,7 +9,7 @@ import java.util.Date;
 @Table(name ="customer_invoice")
 public class CustomerInvoice {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int CustomerInvoiceId;
 //    private int CustomerId;
     private int UserID;
@@ -32,6 +32,15 @@ public class CustomerInvoice {
         InvoiceDate = invoiceDate;
         Description = description;
         this.customer = customer;
+    }
+
+    public CustomerInvoice(int userID, String invoiceNo, String title, float totalAmount, Date invoiceDate, String description) {
+        UserID = userID;
+        InvoiceNo = invoiceNo;
+        Title = title;
+        TotalAmount = totalAmount;
+        InvoiceDate = invoiceDate;
+        Description = description;
     }
 
     public int getCustomerInvoiceId() {
